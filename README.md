@@ -5,7 +5,7 @@ Home: https://compose.featurelabs.com
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An open source python library for automated prediction engineering.
 
