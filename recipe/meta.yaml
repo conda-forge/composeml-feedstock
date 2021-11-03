@@ -34,7 +34,7 @@ test:
     - pytest ==4.4.1
     - fastparquet >=0.1.6
     - packaging ==20.4
-    - featuretools >=0.9.0
+    - featuretools >=0.18.0,<1.0.0
   source_files:
     - composeml/*
 
