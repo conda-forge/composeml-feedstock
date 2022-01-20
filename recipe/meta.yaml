@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: composeml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/composeml/composeml-{{ version }}.tar.gz
-  sha256: 9ee0830620ef5379ce8c50a34cc73e3df00f2deeda345a56e34fe116f024ed90
+  sha256: 88122867dc377c1b802ce360cecbc64add2da6bf31aec7f51b52728ff371aadd
 
 build:
   noarch: python
