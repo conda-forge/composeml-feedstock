@@ -18,12 +18,11 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - python >=3.6
-    - pandas >=0.23.0
-    - numpy >=1.13.3
-    - tqdm >=4.19.2
-    - matplotlib >=3.0.2
-    - seaborn >=0.9.0
+    - python >=3.7
+    - pandas >=1.1.0
+    - tqdm >=4.32.0
+    - matplotlib >=3.3.3
+    - seaborn >=0.11.0
 
 test:
   commands:
@@ -31,10 +30,10 @@ test:
   imports:
     - composeml
   requires:
-    - pytest ==5.2.0
+    - pytest ==6.0.1
     - fastparquet ==0.5.0
-    - packaging ==20.4
-    - featuretools >=0.18.0,<1.0.0
+    - featuretools >=1.4.0
+    - evalml ==0.41.0
   source_files:
     - composeml/*
 
@@ -49,4 +48,8 @@ about:
 
 extra:
   recipe-maintainers:
+    - gsheni
     - jeff-hernandez
+    - rwedge
+    - tamargrey
+    - thehomebrewnerd
