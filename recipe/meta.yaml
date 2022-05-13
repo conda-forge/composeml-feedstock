@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: composeml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/composeml/composeml-{{ version }}.tar.gz
-  sha256: 88122867dc377c1b802ce360cecbc64add2da6bf31aec7f51b52728ff371aadd
+  sha256: cc926a87dcad1a50695c0cc5ab2e592481c8deb5c13077668c9bcbfe6154d937
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.7
-    - pandas >=1.1.0
+    - python >=3.8
+    - pandas >=1.3.0
     - tqdm >=4.32.0
     - matplotlib >=3.3.3
     - seaborn >=0.11.0
@@ -30,17 +30,17 @@ test:
   imports:
     - composeml
   requires:
-    - pytest ==6.0.1
-    - fastparquet ==0.5.0
+    - pytest ==7.1.2
     - featuretools >=1.4.0
-    - evalml ==0.41.0
+    - woodwork >=0.11.0
+    - pyarrow >=3.0.0
   source_files:
     - composeml/*
 
 about:
-  doc_url: https://compose.featurelabs.com
-  dev_url: https://github.com/FeatureLabs/compose
-  home: https://compose.featurelabs.com
+  doc_url: https://compose.alteryx.com
+  dev_url: https://github.com/alteryx/compose
+  home: https://compose.alteryx.com
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -53,3 +53,4 @@ extra:
     - rwedge
     - tamargrey
     - thehomebrewnerd
+    - dvreed77
