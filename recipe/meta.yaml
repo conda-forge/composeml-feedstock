@@ -16,10 +16,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.7
-    - pandas >=1.1.0
+    - python >=3.8
+    - pandas >=1.3.0
     - tqdm >=4.32.0
     - matplotlib >=3.3.3
     - seaborn >=0.11.0
@@ -30,10 +30,10 @@ test:
   imports:
     - composeml
   requires:
-    - pytest ==6.0.1
-    - fastparquet ==0.5.0
+    - pytest ==7.1.2
     - featuretools >=1.4.0
-    - evalml ==0.41.0
+    - woodwork >=0.11.0
+    - pyarrow >=3.0.0
   source_files:
     - composeml/*
 
@@ -53,3 +53,4 @@ extra:
     - rwedge
     - tamargrey
     - thehomebrewnerd
+    - dvreed77
