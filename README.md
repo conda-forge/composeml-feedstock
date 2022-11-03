@@ -1,7 +1,7 @@
 About composeml
 ===============
 
-Home: https://compose.featurelabs.com
+Home: https://compose.alteryx.com
 
 Package license: BSD-3-Clause
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/composeml-feeds
 
 Summary: An open source python library for automated prediction engineering.
 
-Development: https://github.com/FeatureLabs/compose
+Development: https://github.com/alteryx/compose
 
-Documentation: https://compose.featurelabs.com
+Documentation: https://compose.alteryx.com
 
 Current build status
 ====================
@@ -147,6 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dvreed77](https://github.com/dvreed77/)
 * [@gsheni](https://github.com/gsheni/)
 * [@jeff-hernandez](https://github.com/jeff-hernandez/)
 * [@rwedge](https://github.com/rwedge/)
