@@ -1,4 +1,4 @@
-{% set version = "0.9.1" %}
+{% set version = "0.10.1" %}
 
 package:
   name: composeml
@@ -6,34 +6,36 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/composeml/composeml-{{ version }}.tar.gz
-  sha256: 62ac00bc7c12519001791787ded4c13147e3a5307422dc5112069849136769d5
+  sha256: d87fc181be72fadec16ea0e44ebd363b4e2e3620c87c8b2cae6e236fd00761d4
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.8.*
   run:
-    - python >=3.8
+    - matplotlib >=3.3.3
     - pandas >=1.3.0
-    - tqdm >=4.32.0
-    - matplotlib-base >=3.3.3
+    - python >=3.8.*
     - seaborn >=0.11.0
-
+    - tqdm >=4.32.0
 test:
   commands:
     - pytest --pyargs composeml
   imports:
     - composeml
   requires:
-    - pytest ==7.1.2
     - featuretools >=1.4.0
-    - woodwork >=0.11.0
+    - pip >=21.3.1
     - pyarrow >=3.0.0
+    - pytest-cov ==3.0.0
+    - pytest-xdist >=2.5.0
+    - wheel >=0.33.1
+    - woodwork >=0.11.0
   source_files:
     - composeml/*
 
